@@ -1,15 +1,31 @@
-# `create-preact`
+# Ollama Translator Extension
 
 <h2 align="center">
-  <img height="256" width="256" src="./src/assets/preact.svg">
+  <img height="32" width="32" src="./public/assets/favicon-32x32.png">
 </h2>
 
-<h3 align="center">Get started using Preact and Vite!</h3>
+<h3 align="center">Переводчик текста на базе Ollama, построенный с использованием Preact и Vite</h3>
 
-## Getting Started
+## Описание
 
--   `npm run dev` - Starts a dev server at http://localhost:5173/
+Расширение для браузера, позволяющее переводить выделенный текст с помощью локальных моделей Ollama. Поддерживаются модели: `llama`, `phi`, `mistral`, `gemma`.
 
--   `npm run build` - Builds for production, emitting to `dist/`
+## Возможности
 
--   `npm run preview` - Starts a server at http://localhost:4173/ to test production build locally
+- Перевод текста через контекстное меню
+- Поддержка выбора модели и языка перевода
+- Автоматическое обновление списка моделей каждые 5 минут
+- Интерфейс на основе Preact
+- Поддержка двух языков: русский и английский
+
+## Скрипты
+
+- `npm run dev` — Запускает dev-сервер на http://localhost:5173/
+- `npm run build` — Сборка проекта в `dist/` (включая background-скрипты)
+- `npm run preview` — Локальный сервер для предпросмотра production-сборки на http://localhost:4173/
+
+## Установка и запуск
+
+1. Установи зависимости:
+   ```bash
+   npm install
